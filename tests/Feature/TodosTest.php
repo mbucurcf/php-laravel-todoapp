@@ -89,4 +89,10 @@ class TodosTest extends TestCase
           ->assertStatus(200);
         $this->assertEquals(count( $response->getOriginalContent() ), 0);
     }
+
+	/** @test */
+    public function is_always_false()
+    {
+    	$this->assertEquals( true, false );
+    }
 }
